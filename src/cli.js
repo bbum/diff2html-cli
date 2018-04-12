@@ -127,6 +127,7 @@
     var filePath = path.resolve(os.tmpdir(), filename);
     utils.writeFile(filePath, content);
     open(filePath);
+    open(filePath, "Yoink");
   };
 
   Diff2HtmlInterface.prototype.postToDiffy = function(diff, postType, callback) {
